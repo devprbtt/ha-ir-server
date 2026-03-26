@@ -1,10 +1,12 @@
 {
   "domain": "ir_server_telnet",
   "name": "IR Server Telnet",
-  "codeowners": [],
+  "codeowners": ["@devprbtt"],
   "config_flow": true,
   "iot_class": "local_push",
   "loggers": ["custom_components.ir_server_telnet"],
+  "documentation": "https://github.com/devprbtt/ha-ir-server",
+  "issue_tracker": "https://github.com/devprbtt/ha-ir-server/issues",
   "zeroconf": [
     {
       "type": "_irservertelnet._tcp.local.",
@@ -16,5 +18,5 @@
     }
   ],
   "requirements": [],
-  "version": "0.3.0"
+  "version": "0.3.1"
 }

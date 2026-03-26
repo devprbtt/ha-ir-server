@@ -30,3 +30,8 @@ If the firmware is already running on your network and this integration is insta
 - The integration domain is now `ir_server_telnet`. This is a breaking rename from the earlier `hvactelnet` domain, so existing installs should remove the old custom integration and add the new one.
 - The firmware project and API documentation live in the firmware repository:
   https://github.com/devprbtt/ir-server-esp32
+
+
+## HACS
+- This repository now includes `hacs.json` and GitHub Actions for `hacs` and `hassfest` validation.
+- Once GitHub Actions finishes successfully on `main`, the repo is ready to be added to HACS as a custom integration repository.
