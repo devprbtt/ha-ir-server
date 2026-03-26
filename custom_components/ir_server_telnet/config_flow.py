@@ -107,6 +107,11 @@ class HvacTelnetConfigFlow(ConfigFlow, domain=DOMAIN):
         self._discovered_host = host
         self._discovered_port = port
         self._discovered_name = hostname or name or host
+        self.context["title_placeholders"] = {
+            CONF_NAME: host,
+            CONF_HOST: host,
+            CONF_PORT: str(port),
+        }
         return await self.async_step_zeroconf_confirm()
 
     async def async_step_zeroconf_confirm(
