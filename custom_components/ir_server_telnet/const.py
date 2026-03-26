@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from homeassistant.const import Platform
 
-DOMAIN = "hvactelnet"
+DOMAIN = "ir_server_telnet"
 DEFAULT_PORT = 4998
 PLATFORMS = (Platform.CLIMATE, Platform.BUTTON, Platform.SENSOR)
 

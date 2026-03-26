@@ -21,7 +21,7 @@ class HvacTelnetCoordinator(DataUpdateCoordinator[HvacSnapshot]):
         super().__init__(
             hass,
             _LOGGER,
-            name="hvactelnet",
+            name="ir_server_telnet",
         )
         self.client = client
         self.data = HvacSnapshot()

@@ -1,16 +1,20 @@
 {
-  "domain": "hvactelnet",
+  "domain": "ir_server_telnet",
   "name": "IR Server Telnet",
   "codeowners": [],
   "config_flow": true,
   "iot_class": "local_push",
-  "loggers": ["custom_components.hvactelnet"],
+  "loggers": ["custom_components.ir_server_telnet"],
   "zeroconf": [
+    {
+      "type": "_irservertelnet._tcp.local.",
+      "name": "*"
+    },
     {
       "type": "_hvactelnet._tcp.local.",
       "name": "*"
     }
   ],
   "requirements": [],
-  "version": "0.2.0"
+  "version": "0.3.0"
 }
